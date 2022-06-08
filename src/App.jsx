@@ -55,8 +55,8 @@ const App = () => {
         <AddTask handleTaskAddition={handleTaskAddition} />
         <Tasks
           tasks={tasks}
-          handleTaskClick={handleTaskClick}
-          handleTaskDeletion={handleTaskDeletion}
+          onClick={handleTaskClick}
+          onDelete={handleTaskDeletion}
         />
       </div>
     </>

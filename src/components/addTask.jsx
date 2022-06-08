@@ -10,13 +10,14 @@ const AddTask = ({ handleTaskAddition }) => {
     setInputData(e.target.value);
   };
 
-  const handleAddTaskClick = () => {
+  const handleAddTaskClick = (e) => {
+    e.preventDefault();
     handleTaskAddition(inputData);
     setInputData("");
   };
 
   return (
-    <div className="add-task-container">
+    <form onSubmit={handleAddTaskClick} className="add-task-container">
       <input
         onChange={handleInputChange}
         value={inputData}
@@ -24,9 +25,9 @@ const AddTask = ({ handleTaskAddition }) => {
         type="text"
       />
       <div className="add-task-button-container">
-        <Button onClick={handleAddTaskClick}>Adicionar</Button>
+        <Button>Adicionar</Button>
       </div>
-    </div>
+    </form>
   );
 };
 
