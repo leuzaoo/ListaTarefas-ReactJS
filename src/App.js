@@ -1,14 +1,8 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Leonardo Costa</p>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  return <div className="container"></div>;
+};
 
 export default App;
