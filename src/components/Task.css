@@ -14,20 +14,19 @@
 }
 
 .remove-task-button{
-    background-color: #333;
+    background-color: #444;
     border: none;
     font-size: 16px;
     color: chartreuse;
     cursor: pointer;
-    width: 25px;
-    height: 25px;
     transition: all 0.3s ease;
+    height: 30px;
+    border-radius: 15px;
 }
 
 .remove-task-button:hover{
-    background-color: #666;
     transition: all 0.3s ease;
-    color: black;
+    background-color: #555;
+    color: darkred;
     font-weight: bold;
-    background-color: chartreuse;
 }

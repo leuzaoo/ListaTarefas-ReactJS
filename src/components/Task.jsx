@@ -1,4 +1,5 @@
 import React from "react";
+import { FiTrash2 } from "react-icons/fi";
 
 import "./Task.css";
 
@@ -17,7 +18,7 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
           className="remove-task-button"
           onClick={() => handleTaskDeletion(task.id)}
         >
-          X
+          <FiTrash2 />
         </button>
       </div>
     </div>
