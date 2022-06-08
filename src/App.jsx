@@ -1,7 +1,11 @@
+// Librarys
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
+// Styles
 import "./App.css";
+
+// Components
 import AddTask from "./components/addTask";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";

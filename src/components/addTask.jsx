@@ -1,6 +1,10 @@
+// Library
 import React, { useState } from "react";
 
+// Style
 import "./addTask.css";
+
+// Components
 import Button from "./Button";
 
 const AddTask = ({ handleTaskAddition }) => {

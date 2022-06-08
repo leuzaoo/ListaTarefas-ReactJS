@@ -1,32 +1,37 @@
-.task-container{
-    background-color: #444;
-    margin: 8px 0;
-    padding: 15px 20px;
-    display: flex;
-    border-radius: 5px;
-    justify-content: space-between;
-    color: #fff;
-    align-items: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+.task-container {
+  background-color: #444;
+  margin: 8px 0;
+  padding: 15px 20px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  text-transform: capitalize;
+  color: white;
+  align-items: center;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
 }
 
-.task-title{
-    cursor: pointer;
+.task-title {
+  cursor: pointer;
 }
 
-.remove-task-button{
-    background-color: #444;
-    border: none;
-    font-size: 16px;
-    color: chartreuse;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    height: 30px;
-    border-radius: 15px;
+.remove-task-button {
+  background-color: #444;
+  border: none;
+  font-size: 16px;
+  color: chartreuse;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  height: 30px;
 }
 
-.remove-task-button:hover{
-    transition: all 0.3s ease;
-    background-color: #555;
-    color: darkred;
-    font-weight: bold;
+.remove-task-button:hover {
+  transition: all 0.3s ease;
+  background-color: #555;
+  color: darkred;
+  font-weight: bold;
+  border-radius: 15px;
 }

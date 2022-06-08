@@ -1,6 +1,10 @@
+// Library
 import React from "react";
 import { FiTrash2 } from "react-icons/fi";
+import { FaInfo } from "react-icons/fa";
 
+// Style
+import "./Details.css";
 import "./Task.css";
 
 const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
@@ -14,6 +18,12 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
       </div>
 
       <div className="buttons-container">
+        <button
+          className="see-task-details-button"
+          onClick={() => handleTaskDeletion(task.id)}
+        >
+          <FaInfo />
+        </button>
         <button
           className="remove-task-button"
           onClick={() => handleTaskDeletion(task.id)}

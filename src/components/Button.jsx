@@ -1,5 +1,7 @@
+// Library
 import React from "react";
 
+// Style
 import "./Button.css";
 
 const Button = ({ children, onClick }) => {

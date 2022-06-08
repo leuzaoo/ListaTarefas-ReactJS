@@ -1,0 +1,15 @@
+.see-task-details-button {
+  background-color: #444;
+  border: none;
+  color: chartreuse;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  height: 30px;
+}
+
+.see-task-details-button:hover {
+  transition: all 0.3s ease;
+  background-color: #555;
+  border-radius: 15px;
+}
