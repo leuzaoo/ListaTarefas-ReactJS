@@ -1,6 +1,7 @@
 // Librarys
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Styles
 import "./App.css";
@@ -53,7 +54,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <Router>
       <div className="container">
         <Header />
         <AddTask handleTaskAddition={handleTaskAddition} />
@@ -63,8 +64,9 @@ const App = () => {
           onDelete={handleTaskDeletion}
         />
       </div>
-    </>
+    </Router>
   );
 };
 
 export default App;
+
