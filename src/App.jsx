@@ -57,11 +57,19 @@ const App = () => {
     <Router>
       <div className="container">
         <Header />
-        <AddTask handleTaskAddition={handleTaskAddition} />
-        <Tasks
-          tasks={tasks}
-          onClick={handleTaskClick}
-          onDelete={handleTaskDeletion}
+        <Route
+          path="/"
+          exact
+          render={() => (
+            <>
+              <AddTask handleTaskAddition={handleTaskAddition} />
+              <Tasks
+                tasks={tasks}
+                onClick={handleTaskClick}
+                onDelete={handleTaskDeletion}
+              />
+            </>
+          )}
         />
       </div>
     </Router>
@@ -69,4 +77,3 @@ const App = () => {
 };
 
 export default App;
-
