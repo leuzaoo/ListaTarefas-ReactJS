@@ -1,7 +1,6 @@
 // Librarys
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Styles
 import "./App.css";
@@ -13,16 +12,7 @@ import Tasks from "./components/Tasks";
 
 const App = () => {
   const [tasks, setTasks] = useState([
-    {
-      id: "1",
-      title: "Estudar Programação",
-      completed: false,
-    },
-    {
-      id: "2",
-      title: "Ler livros",
-      completed: true,
-    },
+
   ]);
 
   const handleTaskClick = (taskId) => {
@@ -54,26 +44,19 @@ const App = () => {
   };
 
   return (
-    <Router>
-      <div className="container">
-        <Header />
-        <Route
-          path="/"
-          exact
-          render={() => (
-            <>
-              <AddTask handleTaskAddition={handleTaskAddition} />
-              <Tasks
-                tasks={tasks}
-                onClick={handleTaskClick}
-                onDelete={handleTaskDeletion}
-              />
-            </>
-          )}
+    <div className="container">
+      <Header />
+      <>
+        <AddTask handleTaskAddition={handleTaskAddition} />
+        <Tasks
+          tasks={tasks}
+          onClick={handleTaskClick}
+          onDelete={handleTaskDeletion}
         />
-      </div>
-    </Router>
+      </>
+    </div>
   );
 };
+
 
 export default App;
