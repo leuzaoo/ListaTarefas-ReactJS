@@ -19,12 +19,6 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
 
       <div className="buttons-container">
         <button
-          className="see-task-details-button"
-          onClick={() => handleTaskDeletion(task.id)}
-        >
-          <FaInfo />
-        </button>
-        <button
           className="remove-task-button"
           onClick={() => handleTaskDeletion(task.id)}
         >
